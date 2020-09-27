@@ -1,0 +1,314 @@
+/*头部开始*/
+.fang{
+	width: 100%;
+	overflow: hidden;
+}
+.header{
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	display: flex;
+	position: relative;
+}
+.header img{
+	height: 60px;
+	margin-left: 66px;
+	margin-right: 18px;
+}
+.poster{
+	width: 100%;
+}
+.poster img{
+	width: 100%;
+}
+span{
+	line-height: 90px;
+	font-size: 18px;
+	color: #673bb7;
+}
+.nav{
+	width: 501px;
+	margin-left: 310px;
+	display: flex;
+	justify-content: space-around;
+}
+.nav ul{
+	display: flex;
+	justify-content: space-around;
+	width: 501px;
+	height: 90px;
+	
+}
+.nav ul li{
+	
+	line-height: 90px;
+}
+.nav ul li a{
+	margin-top: 22px;
+	line-height: 60px;
+	color: #4c4c4c;
+	display: block;
+	height: 60px;
+	border-bottom: 2px solid #4c4c4c;
+}
+.nav ul li a{
+	margin-top: 22px;
+	line-height: 60px;
+	color: #4c4c4c;
+	display: block;
+	height: 60px;
+	border-bottom: 2px solid transparent;
+	z-index: 1;
+}
+
+.nav ul li a:hover{
+	border-bottom: 2px solid #4c4c4c;
+	z-index: 1;
+}
+/*服务项目开始*/
+.nav ul .ac3{
+	position: relative;
+}
+.xiangmu{
+	width: 166px;
+	height: 202px;
+	background-color: #f7f7f7;
+	position: absolute;
+	right: -51px;
+	top: 93px;
+	text-align: center;
+	display: none;
+	
+}
+.xiangmu h2{
+	color: black;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #f7f7f7;
+}
+.nav ul li .ac3-3:hover .xiangmu{
+	display: block;
+	z-index: 100;
+}
+/*头部结束*/
+.title{
+	width: 100%;
+	text-align: center;
+	margin-top: 83px;
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+.title h2{
+	font-size: 32px;
+	color: #333;
+	height: 34px;
+	line-height: 34px;
+}
+.title p{
+	font-size: 12px;
+	color:rgb(169, 169, 169);
+	height: 29px;
+	line-height: 29px;
+}
+/*标题结束*/
+/*main1开发*/
+.main1-kaifa{
+	display: flex;
+	overflow: hidden;
+}
+.main1-kaifa .kaifa{
+	width: 25%;
+	height: 504px;
+	text-align: center;
+}
+.main1-kaifa .kaifa img{
+	margin-top: 97px;
+}
+.main1-kaifa .kaifa h2{
+	font-size: 17px;
+	height: 38px;
+	line-height: 38px;
+	color: #333333;
+	margin-top: 51px;
+}
+.main1-kaifa .kaifa p{
+	font-size: 12px;
+	height: 35px;
+	line-height: 35px;
+	color: #999999;
+}
+.main1 h3{
+	text-align: center;
+	font-size: 20px;
+	color: #333333;
+	height: 43px;
+	line-height: 43px;
+}
+/*牌开始*/
+.pai{
+	width: 100%;
+	height: 349px;
+	overflow: hidden;
+}
+.pai .inner{
+	width: 70%;
+	height: 290px;
+	margin: 0 auto;
+	background-image: url(../images/pai.webp);
+	background-repeat: no-repeat;
+	background-size: 100% 290px;
+	position: relative;
+	/*overflow: hidden;*/
+}
+.pai .inner:hover{
+	background-size: 101% 290px;
+}
+.inner .a1{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color:#c6c6c6 ;
+	border-radius: 20px;
+	position: absolute;
+	left: -40px;
+	top: 123px;
+	background-image: url(../images/jinglingtu.png);
+	background-repeat: no-repeat;
+	background-position: -13px -9px;
+	cursor: pointer;
+}
+.inner .a2{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color:#c6c6c6;
+	border-radius: 20px;
+	position: absolute;
+	right: -40px;
+	top: 123px;
+	background-image: url(../images/jinglingtu.png);
+	background-repeat: no-repeat;
+	background-position: -55px -9px;
+	cursor: pointer;
+}
+/*phone开始*/
+.phone{
+	width: 100%;
+	height: 476px;
+	overflow: hidden;
+}
+.phone-inner{
+	width: 100%;
+	height: 476px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.phone-inner .hua{
+	width: 13.2%;
+	height: 476px;
+	text-align: center;
+	overflow: hidden;
+}
+.phone-inner .hua img{
+	margin-top: 138px;
+	margin-bottom: 83px;
+}
+.phone-inner .hua a{
+	display: block;
+	color: #706eeb;
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+	cursor: pointer;
+}
+.phone-inner .hua .a{
+	display: block;
+	color:rgba(153,153,153,1);
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+}
+/*footer开始*/
+.footer{
+	width: 100%;
+	height: 226px;
+	background-color: #212121;
+}
+.footer-inner{
+	width: 1080px;
+	height: 226px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.footer-inner1{
+	width: 429px;
+	height: 226px;
+}
+.footer-inner2{
+	width: 429px;
+	height: 226px;
+}
+.footer-inner1 img{
+	width: 184px;
+	margin-left: 91px;
+	margin-top: 13px;
+	margin-bottom: 6px;
+}
+.footer-inner1 p{
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	color: #ffffff;
+}
+.footer-inner2 img{
+	width: 184px;
+	margin-left: 75px;
+	margin-top: 13px;
+	margin-bottom: 6px;
+}
+.footer-inner2 p{
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	color: #ffffff;
+}
+/*版权开始*/
+.banquan{
+	width: 100%;
+	height: 55px;
+	background-color:#222222 ;
+	position: relative;
+}
+.banquan .you{
+	color: rgb(255, 255, 255);
+	 font-size: 12px;
+	height: 55px;
+	line-height: 55px;
+	margin-left: 50%;
+	position: absolute;
+	left: -595px;
+}
+.banquan .ban{
+	color: rgb(255, 255, 255);
+	 font-size: 12px;
+	height: 55px;
+	line-height: 55px;
+	margin-left: 50%;
+	
+}
+.xiaoyang{
+	width: 172px;
+	height: 101px;
+	background-image: url(../images/xiaoyang.png);
+	background-repeat: no-repeat;
+	background-size: 172px 101px;
+	cursor: pointer;
+	position: fixed;
+	top: 388px;
+	right: 0px;
+	z-index: 1;
+}

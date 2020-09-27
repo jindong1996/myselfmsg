@@ -1,0 +1,115 @@
+body{
+	min-width: 1450px;
+}
+.common-nav-ac{
+	border-bottom: 2px solid #4c4c4c;
+}
+/*首页top开始*/
+.index-top{
+	width: 100%;
+	height: 90px;
+	display: flex;
+}
+.index-top-logo{
+	width: 250px;
+	height: 60px;
+	margin-left: 71px;
+	margin-top: 16px;
+}
+.index-top-logo img{
+	width: 250px;
+	height: 60px;
+}
+.index-top-phone{
+	width: 246px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(103, 59, 183);
+}
+.index-top-nav{
+	width: 537px;
+	height: 90px;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 385px;
+	align-items: center;
+}
+.index-top-nav ul{
+	width: 537px;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+}
+.index-top-nav ul li a{
+	display: flex;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #4c4c4c;
+}
+
+.index-top-nav ul li a:hover{
+	border-bottom: 2px solid #4c4c4c;
+}
+
+/*服务项目开始*/
+.index-top-nav ul li:nth-child(4){
+	position: relative;
+}
+.xiangmu{
+	width: 166px;
+	height: 202px;
+	background-color: #f7f7f7;
+	position: absolute;
+	right: -51px;
+	top: 90px;
+	display: none;
+	text-align: center;
+	
+	
+}
+.xiangmu h2{
+	color: black;
+	font-size: 14px;
+	height: 50px;
+	box-sizing: border-box;
+	line-height: 50px;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.index-top-nav ul li:nth-child(4):hover .xiangmu{
+	display: block;
+}
+/*服务项目结束*/
+/*top结束*/
+
+/*banner开始*/
+.index-banner{
+	width: 100%;
+	height: 530px;
+	margin-bottom: 48px;
+}
+.index-banner img{
+	width: 100%;
+	height: 100%;
+}
+/*banner结束*/
+
+/*小羊开始*/
+.xiaoyang{
+	width: 172px;
+	height: 101px;
+	background-image: url(../images/xiaoyang.png);
+	background-repeat: no-repeat;
+	background-size: 172px 101px;
+	cursor: pointer;
+	position: fixed;
+	top: 388px;
+	right: 0px;
+	z-index: 1;
+}
+/*小羊结束*/

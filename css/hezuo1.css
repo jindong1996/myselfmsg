@@ -1,0 +1,172 @@
+/*合作title开始*/
+.hz-title{
+	width: 100%;
+	height: 80px;
+}
+.hz-title h2{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+	font-family:微软雅黑;
+}
+.hz-title p{
+	width: 1477px;
+	height: 36px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999999;
+	line-height: 36px;
+	text-align: center;
+}
+/*合作title结束*/
+
+/*产品服务开始 引用首页*/
+.index-fw{
+	width: 100%;
+	height: 251px;
+	margin-top: 52px;
+	margin-bottom: 200px;
+	display: flex;
+}
+.index-fw-cp{
+	width: 25%;
+	height: 251px;
+}
+.index-fw-cp img{
+	display: block;
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	margin-top: 43px;
+	margin-bottom: 46px;
+}
+
+.index-fw-cp h2{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+}
+.index-fw-cp p{
+	width: 100%;
+	height: 36px;
+	font-size: 12px;
+	color: #999999;
+	line-height: 36px;
+	text-align: center;
+}
+/*产品服务结束 引用首页*/
+
+/*合作伙伴开始*/
+.hz-tu-bao{
+	width: 1800px;
+	height: 306px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 120px;
+	position: relative;
+}
+.index-hz-tu{
+	width: 1400px;
+	height: 306px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-size: 1400px 306px;
+	background-repeat: no-repeat;
+	transition: all ease .36s;
+}
+.index-hz-tu:hover{
+	transform: scale(1.05);
+}
+.hz-tu-bao .jt{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	opacity: 0.7;
+	background-color: #999995;
+}
+.hz-tu-bao .left{
+	position: absolute;
+	left: 150px;
+	top: 135px;
+}
+.hz-tu-bao .right{
+	position: absolute;
+	right: 150px;
+	top: 135px;
+}
+/*合作伙伴结束*/
+
+/*联系我们开始*/
+.index-lianxi{
+	width: 100%;
+	height: 232px;
+	margin-top: 130px;
+	display: flex;
+	margin-bottom: 110px;
+}
+.index-lianxi1{
+	width: 33.333%;
+	height: 232px;
+	text-align: center;
+}
+.index-lianxi1 img{
+	margin-bottom: 80px;
+}
+.index-lianxi1 p{
+	font-size: 14px;
+	line-height: 30px;
+}
+.index-lianxi1-ac{
+	color: #496ee8;
+}
+/*联系我们结束*/
+
+/*底部开始*/
+.index-footer{
+	width: 100%;
+	height: 312px;
+	background-color: #212121;
+}
+.index-footer-nr{
+	width: 900px;
+	height: 220px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.index-footer-erweima{
+	width: 220px;
+	height: 220px;
+	text-align: center;
+}
+.index-footer-erweima img{
+	width: 180px;
+	height: 180px;
+	margin-top: 12px;
+}
+.index-footer-erweima p{
+	font-size: 14px;
+	line-height: 40px;
+	color: white;
+}
+.index-beihao{
+	width: 100%;
+	height: 90px;
+	text-align: center;
+}
+.index-beihao p{
+	font-size: 12px;
+	line-height: 40px;
+	color: #a9a9a9;
+}
+/*底部结束*/

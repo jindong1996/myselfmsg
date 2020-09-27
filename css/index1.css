@@ -1,0 +1,464 @@
+body{
+	min-width: 1450px;
+}
+.index-top{
+	width: 100%;
+	height: 90px;
+	display: flex;
+}
+.index-top-logo{
+	width: 250px;
+	height: 60px;
+	margin-left: 71px;
+	margin-top: 16px;
+}
+.index-top-logo img{
+	width: 250px;
+	height: 60px;
+}
+.index-top-phone{
+	width: 246px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(103, 59, 183);
+}
+.index-top-nav{
+	width: 537px;
+	height: 90px;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 385px;
+	align-items: center;
+}
+.index-top-nav ul{
+	width: 537px;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+}
+.index-top-nav ul li a{
+	display: flex;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #4c4c4c;
+}
+
+.index-top-nav ul li a:hover{
+	border-bottom: 2px solid #4c4c4c;
+}
+
+/*top结束*/
+
+/*banner开始*/
+.index-banner{
+	width: 100%;
+	height: 530px;
+	margin-bottom: 48px;
+}
+.index-banner img{
+	width: 100%;
+	height: 100%;
+}
+/*banner结束*/
+
+/*首页title开始*/
+.index-title{
+	width: 100%;
+	height: 80px;
+}
+.index-title h2{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+}
+.index-title p{
+	width: 1477px;
+	height: 36px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999999;
+	line-height: 36px;
+	text-align: center;
+}
+/*首页title结束*/
+
+/*产品服务开始*/
+.index-fw{
+	width: 100%;
+	height: 251px;
+	margin-top: 52px;
+	margin-bottom: 200px;
+	display: flex;
+}
+.index-fw-cp{
+	width: 25%;
+	height: 251px;
+}
+.index-fw-cp img{
+	display: block;
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	margin-top: 43px;
+	margin-bottom: 46px;
+}
+
+.index-fw-cp h2{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+}
+.index-fw-cp p{
+	width: 100%;
+	height: 36px;
+	font-size: 12px;
+	color: #999999;
+	line-height: 36px;
+	text-align: center;
+}
+/*产品服务结束*/
+
+/*首页合作方式开始*/
+.index-hz{
+	width: 1429px;
+	height: 475px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	margin-bottom: 81px;
+}
+.index-hz-img{
+	width: 713px;
+	height: 475px;
+}
+.index-hz-img img{
+	width: 713px;
+	height: 475px;
+}
+.index-hz-fs{
+	width: 681px;
+	height: 475px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.index-hz-fs1{
+	width: 293px;
+	height: 157px;
+	margin-bottom: 46px;
+}
+.index-hz-fs1 span{
+	display: block;
+	width: 58px;
+	height: 65px;
+	font-size: 50px;
+}
+.index-hz-fs1 h3{
+	height: 28px;
+	line-height: 28px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.index-hz-fs1 p{
+	width: 293px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+}
+/*首页合作方式结束*/
+
+/*经典案例开始*/
+.index-an-tu{
+	width: 1780px;
+	height: 1116px;
+	margin: 0 auto;
+}
+.index-an-tu ul{
+	width: 1780px;
+	height: 1116px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.index-an-tu ul li{
+	width: 437px;
+	height: 251px;
+	overflow: hidden;
+	margin-bottom: 28px;
+}
+.index-an-tu ul li .img{
+	width: 437px;
+	height: 251px;
+	overflow: hidden;
+	background-size: 437px 251px;
+	transition: all  ease .36s;
+}
+.index-an-tu ul li .img:hover{
+	transform: scale(1.05);
+}
+/*经典玛丽结束*/
+
+/*经典案例下面3张大图开始*/
+.index-an-3tu{
+	width: 1895px;
+	height: 333px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+.index-an-3tu ul{
+	width: 1895px;
+	height: 333px;
+	display: flex;
+	justify-content: space-between;
+}
+.index-an-3tu ul li{
+	width: 619px;
+	height: 333px;
+	overflow: hidden;
+}
+.index-an-3tu ul li .img3{
+	width: 619px;
+	height: 333px;
+	background-size: 619px 333px;
+	overflow: hidden;
+	transition: all ease 0.36s;
+}
+.index-an-3tu ul li .img3:hover{
+	transform: scale(1.05);
+}
+/*经典案例下面3张大图结束*/
+
+/*合作伙伴开始*/
+.hz-tu-bao{
+	width: 1800px;
+	height: 306px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 120px;
+	position: relative;
+}
+.index-hz-tu{
+	width: 1400px;
+	height: 306px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-size: 1400px 306px;
+	background-repeat: no-repeat;
+	transition: all ease .36s;
+}
+.index-hz-tu:hover{
+	transform: scale(1.05);
+}
+.hz-tu-bao .jt{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	opacity: 0.7;
+	background-color: #999995;
+}
+.hz-tu-bao .left{
+	position: absolute;
+	left: 150px;
+	top: 135px;
+}
+.hz-tu-bao .right{
+	position: absolute;
+	right: 150px;
+	top: 135px;
+}
+/*合作伙伴结束*/
+
+/*选择我们title开始*/
+.index-xuan-title{
+	width: 100%;
+	height: 171px;
+}
+.index-xuan-title h2{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+}
+.index-xuan-title p{
+	width: 1477px;
+	height: 36px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999999;
+	line-height: 36px;
+	text-align: center;
+}
+.index-xuan-title h3{
+	width: 1482px;
+	line-height: 29px;
+	font-size: 14px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 22px;
+	color: #585770;
+}
+/*选择我们title结束*/
+
+/*为什么选择我们开始*/
+.index-way{
+	width: 100%;
+	height: 420px;
+	margin-top: 90px;
+	position: relative;
+	margin-bottom: 85px;
+	background-image: url(../images/beijing.jpg);
+}
+.index-way-nr{
+	width: 1400px;
+	height: 420px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -700px;
+	overflow: hidden;
+	display: flex;
+}
+.index-way-nr1{
+	width: 479px;
+	height: 200px;
+	margin-top: 108px;
+	text-align: center;
+}
+.index-way-nr1 h2{
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+}
+.index-way-nr1 p{
+	font-size: 14px;
+	line-height: 26px;
+	color: white;
+}
+/*为什么选择我们结束*/
+
+/*项目管理开始*/
+.index-guanli{
+	width: 1400px;
+	height: 240px;
+	margin: 0 auto;
+	margin-top: 182px;
+	display: flex;
+	margin-bottom: 95px;
+	justify-content: space-around;
+}
+.index-guanli1{
+	width: 260px;
+	height: 240px;
+	text-align: center;
+}
+.index-guanli1 img{
+	margin-bottom: 26px;
+}
+.index-guanli1 h2{
+	font-size: 20px;
+	line-height: 35px;
+	color: #333333;
+}
+.index-guanli1 p{
+	font-size: 14px;
+	line-height: 30px;
+	color: #999999;
+}
+/*项目管理结束*/
+
+/*丰富的部件库开始*/
+.index-bujian{
+	width: 1100px;
+	height: 385px;
+	margin: 0 auto;
+	margin-top: 90px;
+	margin-bottom: 56px;
+}
+.index-bujian img{
+	width: 1100px;
+	height: 385px;
+}
+/*丰富的部件库结束*/
+
+/*联系我们开始*/
+.index-lianxi{
+	width: 100%;
+	height: 232px;
+	margin-top: 130px;
+	display: flex;
+	margin-bottom: 110px;
+}
+.index-lianxi1{
+	width: 33.333%;
+	height: 232px;
+	text-align: center;
+}
+.index-lianxi1 img{
+	margin-bottom: 80px;
+}
+.index-lianxi1 p{
+	font-size: 14px;
+	line-height: 30px;
+}
+.index-lianxi1-ac{
+	color: #496ee8;
+}
+/*联系我们结束*/
+
+/*底部开始*/
+.index-footer{
+	width: 100%;
+	height: 312px;
+	background-color: #212121;
+}
+.index-footer-nr{
+	width: 900px;
+	height: 220px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.index-footer-erweima{
+	width: 220px;
+	height: 220px;
+	text-align: center;
+}
+.index-footer-erweima img{
+	width: 180px;
+	height: 180px;
+	margin-top: 12px;
+}
+.index-footer-erweima p{
+	font-size: 14px;
+	line-height: 40px;
+	color: white;
+}
+.index-beihao{
+	width: 100%;
+	height: 90px;
+	text-align: center;
+}
+.index-beihao p{
+	font-size: 12px;
+	line-height: 40px;
+	color: #a9a9a9;
+}
+/*底部结束*/

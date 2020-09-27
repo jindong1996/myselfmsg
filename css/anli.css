@@ -1,0 +1,111 @@
+.nav ul .ac1 a{
+	margin-top: 22px;
+	line-height: 60px;
+	color: #4c4c4c;
+	display: block;
+	height: 60px;
+	border-bottom: 2px solid #4c4c4c;
+}
+.title6{
+	width: 100%;
+	height: 308px;
+	background-color: #f7f7f7;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.title6 h2{
+	font-size: 20px;
+	color: #333;
+	height: 41px;
+	line-height: 41px;
+	margin-top: 157px;
+}
+.title6 p{
+	font-size: 14px;
+	color: rgba(153,153,153,1);
+	height: 37px;
+	line-height: 37px;
+}
+.main{
+	width: 100%;
+	background-color: #f5f5f5;
+	padding: 0px 7.7% 0px 13.6%;
+	box-sizing: border-box;
+}
+.main-1{
+	width: 79%;
+	height: 424px;
+	display: flex;
+	margin-bottom: 121px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.main-1 .tu{
+	width: 50%;
+	height: 424px;
+}
+.main-1 .tu img{
+	width: 100%;
+	margin-top: 70px;
+}
+.wenzi{
+	padding-left: 10px;
+	box-sizing: border-box;
+	width: 50%;
+}
+.wenzi h2{
+	font-size: 16px;
+	height: 82px;
+	line-height: 82px;
+	color: #333;
+	margin-top: 30px;
+	margin-bottom: 23px;
+}
+.wenzi p{
+	font-size: 14px;
+	line-height: 30px;
+	color:rgba(153,153,153,1);
+}
+.title5{
+	width: 100%;
+	text-align: center;
+	margin-top: 63px;
+	overflow: hidden;
+}
+.title5 h2{
+	font-size: 32px;
+	color: #333;
+	height: 42px;
+	line-height: 42px;
+}
+.title5 p{
+	font-size: 12px;
+	color:rgb(169, 169, 169);
+	height: 36px;
+	line-height: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

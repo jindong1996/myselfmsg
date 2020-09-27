@@ -1,0 +1,314 @@
+
+<!-- saved from url=(0033)http://www.xunxinkeji.sitekc.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="shortcut icon" href="http://400.d121.faiusr.com/17225400/2/.jpg">
+
+<script>
+    var _as_aid ="17225400";
+    var _as_aacct = "xunxinkeji";
+    var _as_regUrl = "http://www.xunxinkeji.sitekc.com/reg.jsp";
+    var _as_agentTemplateId = "3";
+    var _as_EnvMode = 0;
+    var _as_webFunc = "http://www.xunxinkeji.sitekc.com/webfunc.jsp";
+    var _as_ForWeb = false;
+    var _as_model = "http://www.xunxinkeji.sitekc.com/model.jsp";
+    var _agent_site = true;
+    var _as_st = '';
+    var _agent_min = false;
+</script>
+
+
+
+	
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>洵信科技</title>
+	<meta name="keywords" content="网站模板 小程序模板 微平台">
+	<meta name="description" content="丰富的模板，一键生成网站、小程序、微平台等">
+	<link rel="stylesheet" href="./muban-fw2_files/comm.min.css">
+	<link rel="stylesheet" href="./muban-fw2_files/index.min.css">
+	<link rel="stylesheet" href="./muban-fw2_files/yellow.min.css">
+	<script src="./muban-fw2_files/vue.min.js"></script>
+	<script src="./muban-fw2_files/jquery-core.min.js"></script>
+	
+	
+
+
+<script type="text/x-template" id="headerNav">
+    <div class="head">
+        
+        <div class="head-top">
+            <div class="logo" v-if="!header.hideLogo">
+                <a href="/index.jsp">
+                    <img :src="header.logoUrl" :style="header.outLogoStyle">
+                </a>
+            </div>
+            <div class="corp-title" :style="header.hackTitleLeft">{{ header.siteName }}</div>
+            <div class="header-right">
+                <template v-if="header.servicePhone !== ''">
+                    <i class="service-line"></i>
+                    <span class="hot-line">{{ header.servicePhone }}</span>
+                    <div class="clear"></div>
+                </template>
+            </div>
+        </div>
+        
+        <div class="head-nav">
+            <div class="middle">
+                <template v-for="(nav, index) in header.navList" :key="index">
+                    <div class="middle-item header-item" :class="(nav.name2 ? 'show-two-tab ' : ' ') + nav.css">
+                        <a :style="'width:' + header.width + 'px'" :href="nav.name2 !== undefined ? 'javascript:void(0)' : nav.link" :target="nav.targetType || ''">
+                            {{ nav.name }}
+                        </a>
+                        <div class="two-tab-item" v-if="nav.name2">
+                            <div class="two-tab">
+                                <div class="item" v-for="(link, index) in nav.link.split(';')" :key="index">
+                                    <a :href="link" class="active">{{ nav.name2.split(';')[index] }}</a>
+                                </div>
+                            </div>
+                            <div class="trangle">
+                                <span class="trangle-tip"></span>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+
+<script type="text/x-template" id="loginReg">
+    <div class="zone" v-if="(showbanner != undefined && !showbanner) || banner.closeOthBanner != undefined && !banner.closeOthBanner" >
+        <div class="btn-group">
+            <span>
+                <a :href="loginReg.loginUrl">
+                    <span class="login-button"></span>
+                </a>
+            </span>
+            <span>
+                <a href="/reg.jsp">
+                    <span class="register-button"></span>
+                </a>
+            </span>
+        </div>
+    </div>
+</script>
+
+
+
+<script type="text/x-template" id="banner">
+    <div class="banner" ref="banner" @mouseover="enter" @mouseout="leave" v-if="showbanner != undefined && !showbanner || banner.closeOthBanner != undefined && !banner.closeOthBanner">
+    <!--   显示独立横幅     -->
+        <template v-if="!banner.closeIndBanner">
+            <!--    显示自定义横幅        -->
+            <ul class="slider-box" v-if="showbanner != undefined && !showbanner && banner.bannerList.length != 0">
+                <template v-for="(banner, index) in banner.bannerList" :key="index" >
+                    <li class="slider-box-li" v-if="banner.ie == 'true'">
+                        <a :href="banner.l" :title="banner.t" :style="'background: url(' + banner.imgUrl + ') center center no-repeat;'" class="banner-a"></a>
+                    </li>
+                </template>
+            </ul>
+            <!--     不显示自定义横幅       -->
+            <div :class="{'ind-banner': !showSelfBanner, 'ind-self-banner':showSelfBanner}" v-else></div>
+<!--            <div class="ind-self-banner" v-else></div>-->
+
+            <div class="arrow" ref="arrow" v-show="showbanner != undefined && !showbanner && banner.bannerList.length != 0">
+                <div class="arrow-btn prev" ref="prev" @click="prev(true)"></div>
+                <a class="arrow-middle"></a>
+                <div class="arrow-btn next" ref="next" @click="next(true)"></div>
+            </div>
+            <div class="banner-nav" v-show="showbanner != undefined && !showbanner && banner.bannerList.length != 0">
+                <template v-for="i in banner.count">
+                    <div class="banner-nav-in" @click="toIndex(i - 1)" :class="lunboInfo.index === (i - 1) ? 'banner-nav-hover' : ''"></div>
+                </template>
+            </div>
+
+        </template>
+<!--    不显示独立横幅    -->
+        <template v-else>
+<!--    显示自定义横幅        -->
+            <ul class="slider-box" v-if="banner.bannerList.length != 0">
+                <template v-for="(banner, index) in banner.bannerList" :key="index">
+                    <li class="slider-box-li" v-if="banner.ie == 'true'">
+                        <a :href="banner.l" :title="banner.t" :style="'background: url(' + banner.imgUrl + ') center center no-repeat;'" class="banner-a"></a>
+                    </li>
+                </template>
+            </ul>
+<!--     不显示自定义横幅       -->
+            <div :class="{'ind-banner': !showSelfBanner, 'ind-self-banner':showSelfBanner}" v-else></div>
+
+            <div class="arrow" ref="arrow" v-show="banner.bannerList.length != 0">
+                <div class="arrow-btn prev" ref="prev" @click="prev(true)"></div>
+                <a class="arrow-middle"></a>
+                <div class="arrow-btn next" ref="next" @click="next(true)"></div>
+            </div>
+            <div class="banner-nav" v-show="banner.bannerList.length != 0">
+                <template v-for="i in banner.count">
+                    <div class="banner-nav-in" @click="toIndex(i - 1)" :class="lunboInfo.index === (i - 1) ? 'banner-nav-hover' : ''"></div>
+                </template>
+            </div>
+        </template>
+    </div>
+</script>
+
+
+
+<script type="text/x-template" id="footer">
+    <div class="footer">
+        <table class="footer-nav" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <a href="/index.jsp">首页</a>
+                    <b>|</b>
+                    <a href="/about.jsp">关于我们</a>
+                    <b>|</b>
+                    <a href="/contact.jsp">联系我们</a>
+                    <b>|</b>
+                    <a href="/pay.jsp">付款方式</a>
+                    <b>|</b>
+                    <a href="/contract.jsp">服务条款</a>
+                    <b>|</b>
+                    <a :href="footer.loginUrl" target="_blank">会员中心</a>
+                </td>
+            </tr>
+        </table>
+        <table v-if="footer.info" class="footer-define" cellpadding="0" cellspacing="0">
+            <tr>
+                <td></td>
+                <td width="600" v-html="footer.info"></td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="footer-copy-right" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <span class="font-1">&copy;</span>
+                    {{ footer.copyRight }}
+                    {{ footer.acctName }}
+                    版权所有
+                </td>
+            </tr>
+        </table>
+    </div>
+</script>
+
+
+
+<script type="text/x-template" id="qqService">
+    <div class="advisory" v-if="qqService.isShow">
+        <div class="qq-title">
+            <a href="javascript:void (0);" @click="qqService.isShow = false"></a>
+        </div>
+        <div class="qq-middle">
+            <div class="icon-qq"></div>
+            <div class="qq-text">QQ在线咨询</div>
+            <div class="qq-contact">
+                <p class="qq-c" v-for="(item, index) in qqService.qqList" :key="index">
+                    <a :href="item" target="_blank">{{ qqService.nameList[index] }}</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="qq-footer" v-if="qqService.phone">
+            <div class="phone-text">电话热线</div>
+            <div class="phone">{{ qqService.phone }}</div>
+        </div>
+    </div>
+</script>
+
+
+<script src="./muban-fw2_files/component.min.js"></script>
+</head>
+<body>
+<div id="box"><div class="head"><div class="head-top"><div class="logo"><a href="http://www.xunxinkeji.sitekc.com/index.jsp"><img src="./muban-fw2_files/AHkIABAEGAAg5KyU5wUoqIvOoQYwyAE4yAE.png" style="height: 100px; width: 100px;"></a></div> <div class="corp-title" style="left: 100px;">洵信科技</div> <div class="header-right"><i class="service-line"></i> <span class="hot-line">18600973590</span> <div class="clear"></div></div></div> <div class="head-nav"><div class="middle"><div class="middle-item header-item  now-middle"><a href="http://www.xunxinkeji.sitekc.com/index.jsp" target="" style="width: 81px;">
+                            首页
+                        </a> <!----></div><div class="middle-item header-item show-two-tab undefined"><a href="javascript:void(0)" target="" style="width: 81px;">
+                            网站
+                        </a> <div class="two-tab-item"><div class="two-tab"><div class="item"><a href="http://www.xunxinkeji.sitekc.com/webfunc.jsp" class="active">网站功能</a></div><div class="item"><a href="http://www.xunxinkeji.sitekc.com/model.jsp" class="active">网站模板</a></div></div> <div class="trangle"><span class="trangle-tip"></span></div></div></div><div class="middle-item header-item show-two-tab undefined"><a href="javascript:void(0)" target="" style="width: 81px;">
+                            商城
+                        </a> <div class="two-tab-item"><div class="two-tab"><div class="item"><a href="http://www.xunxinkeji.sitekc.com/mallfunc.jsp" class="active">商城功能</a></div><div class="item"><a href="http://www.xunxinkeji.sitekc.com/oemMall.jsp" class="active">商城模板</a></div></div> <div class="trangle"><span class="trangle-tip"></span></div></div></div><div class="middle-item header-item  undefined"><a href="http://www.xunxinkeji.sitekc.com/price.jsp" target="" style="width: 81px;">
+                            价格中心
+                        </a> <!----></div><div class="middle-item header-item show-two-tab undefined"><a href="javascript:void(0)" target="" style="width: 81px;">
+                            小程序
+                        </a> <div class="two-tab-item"><div class="two-tab"><div class="item"><a href="http://www.xunxinkeji.sitekc.com/qzfunc.jsp" class="active">小程序功能</a></div><div class="item"><a href="http://www.xunxinkeji.sitekc.com/oemWxAppHome.jsp" class="active">小程序模板</a></div></div> <div class="trangle"><span class="trangle-tip"></span></div></div></div><div class="middle-item header-item  undefined"><a href="http://www.xunxinkeji.sitekc.com/saleSys.jsp" target="" style="width: 81px;">
+                            销售系统
+                        </a> <!----></div><div class="middle-item header-item show-two-tab undefined"><a href="javascript:void(0)" target="" style="width: 81px;">
+                            游戏营销
+                        </a> <div class="two-tab-item"><div class="two-tab"><div class="item"><a href="http://www.xunxinkeji.sitekc.com/hdFunction.jsp" class="active">互动功能</a></div><div class="item"><a href="http://www.xunxinkeji.sitekc.com/oemHdTemplate.jsp" class="active">互动模板</a></div></div> <div class="trangle"><span class="trangle-tip"></span></div></div></div><div class="middle-item header-item  undefined"><a href="http://www.xunxinkeji.sitekc.com/memberSys.jsp" target="" style="width: 81px;">
+                            门店系统
+                        </a> <!----></div><div class="middle-item header-item  undefined"><a href="http://www.xunxinkeji.sitekc.com/wxast.jsp" target="" style="width: 81px;">
+                            助手
+                        </a> <!----></div><div class="middle-item header-item show-two-tab undefined"><a href="javascript:void(0)" target="" style="width: 81px;">
+                            微传单
+                        </a> <div class="two-tab-item"><div class="two-tab"><div class="item"><a href="http://www.xunxinkeji.sitekc.com/flyerFunction.jsp" class="active">微传单功能</a></div><div class="item"><a href="http://www.xunxinkeji.sitekc.com/templateForOem.jsp" class="active">微传单模板</a></div></div> <div class="trangle"><span class="trangle-tip"></span></div></div></div><div class="middle-item header-item  undefined"><a href="http://www.xunxinkeji.sitekc.com/mailFunction.jsp" target="" style="width: 81px;">
+                            企业邮箱
+                        </a> <!----></div><div class="middle-item header-item  undefined"><a href="http://adm.webportal.top/sys/help.jsp" target="_blank" style="width: 81px;">
+                            帮助中心
+                        </a> <!----></div><div class="middle-item header-item  undefined"><a href="http://www.xunxinkeji.sitekc.com/news.jsp" target="" style="width: 81px;">
+                            新闻中心
+                        </a> <!----></div><div class="middle-item header-item  undefined"><a href="http://www.xunxinkeji.sitekc.com/contact.jsp" target="" style="width: 81px;">
+                            联系我们
+                        </a> <!----></div></div></div></div> <div class="zone"><div class="btn-group"><span><a href="http://xunxinkeji.webportal.top/?loginToken="><span class="login-button"></span></a></span> <span><a href="http://www.xunxinkeji.sitekc.com/reg.jsp"><span class="register-button"></span></a></span></div></div> <div class="banner"><div class="ind-banner"></div> <div class="arrow" style="display: none;"><div class="arrow-btn prev"></div> <a class="arrow-middle"></a> <div class="arrow-btn next"></div></div> <div class="banner-nav" style="display: none;"></div></div> <div class="agent-paper"><div class="top"><div class="content-1">ADVANTAGE</div> <div class="content-2">我们的优势</div> <span class="content-3"></span> <span class="content-4"></span></div> <div class="middle"><div class="district" style="opacity: 1;"><div class="circle circle-1" style="top: 0px; background-position-y: 41px;"></div> <div class="ap-text ap-text-1" style="top: 0px; background-position-y: 41px;">强大的自助建站平台</div> <div class="ap-text ap-text-2" style="top: 0px; background-position-y: 41px;">选择主题、输入产品和新闻即可创建与众不同、符合企业风格的网站</div></div> <div class="district" style="opacity: 1;"><div class="circle circle-2" style="top: 0px; background-position-y: 41px;"></div> <div class="ap-text ap-text-1" style="top: 0px; background-position-y: 41px;">鼠标拖拽，自由布局</div> <div class="ap-text ap-text-2" style="top: 0px; background-position-y: 41px;">所见即所得的编辑方式，页面灵活布局，模块自由删减，简单易用</div></div> <div class="district" style="opacity: 1;"><div class="circle circle-3" style="top: 0px; background-position-y: 41px;"></div> <div class="ap-text ap-text-1" style="top: 0px; background-position-y: 41px;">近千套精美模板</div> <div class="ap-text ap-text-2" style="top: 0px; background-position-y: 41px;">网站模板丰富，模板随意更换；可根据不同季节、节庆日等更换不同主题</div></div> <div class="district" style="opacity: 1;"><div class="circle circle-4" style="top: 0px; background-position-y: 41px;"></div> <div class="ap-text ap-text-1" style="top: 0px; background-position-y: 41px;">自主自助建站品牌</div> <div class="ap-text ap-text-2" style="top: 0px; background-position-y: 41px;">费用低廉，设计精美，功能强大，操作简单，维护方便</div></div></div></div> <div class="agent-paper agent-paper-1"><div class="top"><div class="content-1">CASE</div> <div class="content-2">我们的案例</div> <span class="content-3"></span> <span class="content-4"></span></div> <div class="region"><div class="imtc"><div class="imtc-img"><a href="http://fkzlsj02.demo.webportal.top/index.jsp?_as_r=//www.xunxinkeji.sitekc.com/reg.jsp&amp;_as_m=//www.xunxinkeji.sitekc.com/model.jsp" target="_blank"><img src="./muban-fw2_files/AAEIABACGAAgz8eE5gUo_MrR4wQwhgQ4nQU.jpg"></a></div></div><div class="imtc"><div class="imtc-img"><a href="http://fkzlsj01.demo.webportal.top/index.jsp?_as_r=//www.xunxinkeji.sitekc.com/reg.jsp&amp;_as_m=//www.xunxinkeji.sitekc.com/model.jsp" target="_blank"><img src="./muban-fw2_files/AAEIABACGAAgpMiE5gUopvC98AIwhgQ46AU.jpg"></a></div></div><div class="imtc"><div class="imtc-img"><a href="http://fkyuanlin17.demo.webportal.top/index.jsp?_as_r=//www.xunxinkeji.sitekc.com/reg.jsp&amp;_as_m=//www.xunxinkeji.sitekc.com/model.jsp" target="_blank"><img src="./muban-fw2_files/AAEIABACGAAgvoTE2AUokMnpwQUwhgQ4jQg.jpg"></a></div></div><div class="imtc"><div class="imtc-img"><a href="http://fkyuanlin16.demo.webportal.top/index.jsp?_as_r=//www.xunxinkeji.sitekc.com/reg.jsp&amp;_as_m=//www.xunxinkeji.sitekc.com/model.jsp" target="_blank"><img src="./muban-fw2_files/AAEIABACGAAg9tOG5QUo0undgQQwhgQ40Ak.jpg"></a></div></div><div class="imtc"><div class="imtc-img"><a href="http://fkys24.demo.webportal.top/index.jsp?_as_r=//www.xunxinkeji.sitekc.com/reg.jsp&amp;_as_m=//www.xunxinkeji.sitekc.com/model.jsp" target="_blank"><img src="./muban-fw2_files/AAEIABACGAAg8v6F0AUotszGgAYwhgQ43wk.jpg"></a></div></div><div class="imtc"><div class="imtc-img"><a href="http://fkys23.demo.webportal.top/index.jsp?_as_r=//www.xunxinkeji.sitekc.com/reg.jsp&amp;_as_m=//www.xunxinkeji.sitekc.com/model.jsp" target="_blank"><img src="./muban-fw2_files/AAEIABACGAAgt-6F0AUopKKUYjCGBDifBw.jpg"></a></div></div><div class="imtc"><div class="imtc-img"><a href="http://fkyuanlin15.demo.webportal.top/index.jsp?_as_r=//www.xunxinkeji.sitekc.com/reg.jsp&amp;_as_m=//www.xunxinkeji.sitekc.com/model.jsp" target="_blank"><img src="./muban-fw2_files/AAEIABACGAAglseRzwUo0OuNkgIwhgQ4iwg.jpg"></a></div></div><div class="imtc"><div class="imtc-img"><a href="http://fkys15.demo.webportal.top/index.jsp?_as_r=//www.xunxinkeji.sitekc.com/reg.jsp&amp;_as_m=//www.xunxinkeji.sitekc.com/model.jsp" target="_blank"><img src="./muban-fw2_files/AAEIABACGAAgqMy02AUo3sqTyAYwhgQ4rwk.jpg"></a></div></div> <div class="clear"></div> <div class="check-more"><a href="http://www.xunxinkeji.sitekc.com/model.jsp">查看更多案例 &gt; </a></div></div></div> <div class="agent-paper agent-paper-2"><div class="top"><div class="content-1">SERVICE</div> <div class="content-2">一站式服务</div> <span class="content-3"></span> <span class="content-4"></span></div> <div class="middle"><ul> <li><div class="circle circle-1"></div> <div class="service-text">建站</div></li><li><div class="circle circle-2"></div> <div class="service-text">空间</div></li> <li><div class="circle circle-3"></div> <div class="service-text">域名</div></li> <li><div class="circle circle-4"></div> <div class="service-text">备案</div></li> <li><div class="circle circle-5"></div> <div class="service-text">售后</div></li></ul></div></div> <div class="footer"><table cellpadding="0" cellspacing="0" class="footer-nav"><tr><td><a href="http://www.xunxinkeji.sitekc.com/index.jsp">首页</a> <b>|</b> <a href="http://www.xunxinkeji.sitekc.com/about.jsp">关于我们</a> <b>|</b> <a href="http://www.xunxinkeji.sitekc.com/contact.jsp">联系我们</a> <b>|</b> <a href="http://www.xunxinkeji.sitekc.com/pay.jsp">付款方式</a> <b>|</b> <a href="http://www.xunxinkeji.sitekc.com/contract.jsp">服务条款</a> <b>|</b> <a href="http://xunxinkeji.webportal.top/?loginToken=" target="_blank">会员中心</a></td></tr></table> <table cellpadding="0" cellspacing="0" class="footer-define"><tr><td></td> <td width="600"><p><a href="http://www.xunxinsoft.com/" target="_blank" title="北京APP开发公司" style="text-decoration:none;">北京APP开发公司</a></p></td> <td></td></tr></table> <table cellpadding="0" cellspacing="0" class="footer-copy-right"><tr><td><span class="font-1">©</span>
+                    2020
+                    oem18600973590
+                    版权所有
+                </td></tr></table></div> <div class="plug"></div> <div class="advisory"><div class="qq-title"><a href="javascript:void (0);"></a></div> <div class="qq-middle"><div class="icon-qq"></div> <div class="qq-text">QQ在线咨询</div> <div class="qq-contact"><p class="qq-c"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=121761670&amp;site=qq&amp;menu=yes" target="_blank">模板中心</a></p></div></div> <div class="qq-footer"><div class="phone-text">电话热线</div> <div class="phone">18600973590</div></div></div></div>
+
+<script>
+	var boxInfo = new Vue({
+		el: '#box',
+		data: {
+			curColor: 'yellow',
+			caseList: []
+		},
+		created: function () {
+			this.initCase();
+		},
+		computed: {
+			advanceHeight: function () {
+				if (this.curColor === 'yellow') {
+					return '-65px';
+				} else if (this.curColor === 'red') {
+					return '-170px';
+				} else if (this.curColor === 'blue') {
+					return '-284px';
+				}
+				return '41px';
+			}
+		},
+		mounted: function () {
+			$('.district').hover(function () {
+				$(this).addClass('hover-dis').stop().animate({opacity: '1'}, 900)
+						.find('.circle, .ap-text').css({
+					top: '152px',
+					backgroundPositionY: boxInfo.advanceHeight
+				}).stop().animate({top: '0px'}, 900);
+			}, function () {
+				$(this).removeClass('hover-dis')
+						.find('.circle, .ap-text').css({
+					backgroundPositionY: '41px'
+				});
+			});
+		},
+		methods: {
+			// 初始化我们的案例
+			initCase: function () {
+				var _this = this;
+				$.post("/ajax/exqmodel_h.jsp", {
+					cmd: 'initCase',
+					devMode: 'false'
+				}, function (response) {
+					var result = $.parseJSON(response);
+					if (result.success) {
+						var data = result.data;
+						_this.caseList = data.caseList;
+					}
+				})
+			}
+		}
+	})
+</script>
+
+
+	<!--普通模板（蓝、红、黄）-->
+</body></html>

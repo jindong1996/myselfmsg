@@ -1,0 +1,201 @@
+body{
+	min-width: 1450px;
+}
+.index-top{
+	width: 100%;
+	height: 90px;
+	display: flex;
+}
+.index-top-logo{
+	width: 250px;
+	height: 60px;
+	margin-left: 71px;
+	margin-top: 16px;
+}
+.index-top-logo img{
+	width: 250px;
+	height: 60px;
+}
+.index-top-phone{
+	width: 246px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(103, 59, 183);
+}
+.index-top-nav{
+	width: 537px;
+	height: 90px;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 385px;
+	align-items: center;
+}
+.index-top-nav ul{
+	width: 537px;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+}
+.index-top-nav ul li a{
+	display: flex;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #4c4c4c;
+}
+.index-nav-ac{
+	border-bottom: 2px solid #4c4c4c;
+}
+.index-top-nav ul li a:hover{
+	border-bottom: 2px solid #4c4c4c;
+}
+/*top结束*/
+
+/*banner开始*/
+.index-banner{
+	width: 100%;
+	height: 530px;
+	margin-bottom: 148px;
+}
+.index-banner img{
+	width: 100%;
+	height: 100%;
+}
+/*banner结束*/
+
+/*案例title开始*/
+.anli-title{
+	width: 100%;
+	height: 80px;
+}
+.anli-title h2{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+}
+.anli-title p{
+	width: 1477px;
+	height: 36px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999999;
+	line-height: 36px;
+	text-align: center;
+}
+/*案例title结束*/
+
+/*案例下面的内容开始*/
+.anli-nr{
+	width: 1488PX;
+	margin: 0 auto;
+}
+.anli-nr ul{
+	width: 1488PX;
+}
+.anli-nr ul li{
+	width: 1488px;
+	height: 423px;
+	display: flex;
+	margin-bottom: 120px;
+}
+.anli-nr ul li:nth-child(1){
+	margin-top: 130px;
+}
+.anli-nr ul li .img{
+	width: 749px;
+	height: 423px;
+}
+.anli-nr ul li .img img{
+	width: 749px;
+	height: 423px;
+}
+.anli-nr ul li .white{
+	width: 660px;
+	height: 423px;
+	padding-left: 80px;
+}
+.anli-nr ul li .white h3{
+	font-size: 16px;
+	height: 95px;
+	line-height: 95px;
+	color: #333;
+}
+.anli-nr ul li .white p{
+	font-size: 14px;
+	color: rgba(153,153,153,1);
+	line-height: 34px;
+	margin-bottom: 30px;
+}
+/*案例下面的内容结束*/
+
+/*联系我们开始*/
+.index-lianxi{
+	width: 100%;
+	height: 232px;
+	margin-top: 130px;
+	display: flex;
+	margin-bottom: 110px;
+}
+.index-lianxi1{
+	width: 33.333%;
+	height: 232px;
+	text-align: center;
+}
+.index-lianxi1 img{
+	margin-bottom: 80px;
+}
+.index-lianxi1 p{
+	font-size: 14px;
+	line-height: 30px;
+}
+.index-lianxi1-ac{
+	color: #496ee8;
+}
+/*联系我们结束*/
+
+/*底部开始*/
+.index-footer{
+	width: 100%;
+	height: 312px;
+	background-color: #212121;
+}
+.index-footer-nr{
+	width: 900px;
+	height: 220px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.index-footer-erweima{
+	width: 220px;
+	height: 220px;
+	text-align: center;
+}
+.index-footer-erweima img{
+	width: 180px;
+	height: 180px;
+	margin-top: 12px;
+}
+.index-footer-erweima p{
+	font-size: 14px;
+	line-height: 40px;
+	color: white;
+}
+.index-beihao{
+	width: 100%;
+	height: 90px;
+	text-align: center;
+}
+.index-beihao p{
+	font-size: 12px;
+	line-height: 40px;
+	color: #a9a9a9;
+}
+/*底部结束*/

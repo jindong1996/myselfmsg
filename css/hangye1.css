@@ -1,0 +1,378 @@
+.index-top{
+	width: 100%;
+	height: 90px;
+	display: flex;
+}
+.index-top-logo{
+	width: 250px;
+	height: 60px;
+	margin-left: 71px;
+	margin-top: 16px;
+}
+.index-top-logo img{
+	width: 250px;
+	height: 60px;
+}
+.index-top-phone{
+	width: 246px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(103, 59, 183);
+}
+.index-top-nav{
+	width: 537px;
+	height: 90px;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 385px;
+	align-items: center;
+}
+.index-top-nav ul{
+	width: 537px;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+}
+.index-top-nav ul li a{
+	display: flex;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #4c4c4c;
+}
+.index-nav-ac{
+	border-bottom: 2px solid #4c4c4c;
+}
+.index-top-nav ul li a:hover{
+	border-bottom: 2px solid #4c4c4c;
+}
+/*top结束*/
+
+/*banner开始*/
+.index-banner{
+	width: 100%;
+	height: 530px;
+	margin-bottom: 76px;
+}
+.index-banner img{
+	width: 100%;
+	height: 100%;
+}
+/*banner结束*/
+
+/*行业title开始*/
+.hangye-title{
+	width: 100%;
+	height: 96px;
+}
+.hangye-title h2{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+}
+.hangye-title p{
+	width: 1477px;
+	height: 46px;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #999999;
+	line-height: 46px;
+	text-align: center;
+	font-family: arial; 
+}
+/*行业title结束*/
+
+/*行业内容开始*/
+.hangye-nr{
+	width: 1408px;
+	height: 1668px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 25px;
+}
+.hangye-nr-left{
+	width: 897px;
+	height: 1668px;
+}
+.hangye-nr-left .xw{
+	width: 897px;
+	height: 1524px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hangye-nr-left .xw li{
+	width: 897px;
+	height: 203px;
+	box-sizing: border-box;
+	display: flex;
+}
+.hangye-nr-left .xw li .bao{
+	width: 336px;
+	height: 203px;
+	overflow: hidden;
+}
+.hangye-nr-left .xw li .img{
+	width: 336px;
+	height: 203px;
+	overflow: hidden;
+	background-size: 336px 203px;
+	background-repeat: no-repeat;
+	transition: all ease 0.36s;
+}
+.hangye-nr-left .xw li:hover .wrap{
+	border-top: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+}
+.hangye-nr-left .xw li:hover .img{
+	transform: scale(1.05);
+}
+.hangye-nr-left .xw li .wrap{
+	width: 532px;
+	height: 203px;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+.wrap .wrap-title{
+	width: 531px;
+	height: 64px;
+	display: flex;
+	justify-content: space-between;
+}
+.wrap .wrap-title a{
+	width: 200px;
+	height: 64px;
+	text-align: left;
+	line-height: 64px;
+	font-size: 14px;
+}
+.wrap .wrap-title span{
+	width: 80px;
+	height: 64px;
+	text-align: center;
+	line-height: 64px;
+	font-size: 14px;
+	color: #999999;
+}
+.wrap p{
+	line-height: 23px;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 15px;
+}
+.wrap i{
+	font-style: normal;
+	padding: 7px 8px 7px 8px;
+	line-height: 30px;
+	font-size: 12px;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #999999;
+}
+.left-page{
+	width: 310px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 65px;
+	display: flex;
+	justify-content: space-between;
+}
+.left-page li a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+}
+.left-page li:first-child a{
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #ccccd5;
+}
+.left-page li:last-child a{
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #666666;
+}
+
+.hangye-nr-right{
+	width: 482px;
+	height: 1658px;
+	padding-top: 10px;
+}
+.hy-lunbo{
+	width: 482px;
+	height: 161px;
+	position: relative;
+	overflow: hidden;
+}
+.hy-lunbo ul{
+	width: 1928px;
+	height: 161px;
+	display: flex;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.hy-lunbo ul li{
+	width: 482px;
+	height: 161px;
+	background-repeat: no-repeat;
+	background-size: 482px 161px;
+}
+.hy-lunbo .btn{
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #1b1f25;
+	border-radius: 4px;
+	z-index: 99;
+	opacity: 0.8;
+}
+.hy-lunbo .prve{
+	position: absolute;
+	left: 20px;
+	top: 50px;
+	background-image: url(../images/hy-jinglingtu.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.hy-lunbo .prve:hover{
+	opacity: 0.5;
+}
+.hy-lunbo .next{
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	background-image: url(../images/hy-jinglingtu.png);
+	background-repeat: no-repeat;
+	background-position: -45px 0px;
+}
+.hy-lunbo .next:hover{
+	opacity: 0.5;
+}
+.hy-nr-title{
+	width: 475px;
+	height: 71px;
+	line-height: 71px;
+	padding-left: 7px;
+	text-align: left;
+	font-size: 16px;
+}
+.hy-nr{
+	width: 481px;
+	height: 985px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hy-nr1{
+	width: 411px;
+	height: 175px;
+	padding: 0px 40px 0 30px;
+}
+.right-title{
+	width: 412px;
+	height: 61px;
+	display: flex;
+	justify-content: space-between;
+}
+.right-title h2{
+	height: 61px;
+	line-height: 64px;
+	font-size: 16px;
+	font-weight: 400px;
+}
+.right-title span{
+	height: 61px;
+	line-height: 64px;
+	font-size: 14px;
+}
+.hy-nr1 p{
+	font-size: 14px;
+	line-height: 22px;
+	color: #666;
+}
+/*行业内容结束*/
+
+/*联系我们开始引用index开始*/
+/*联系我们开始*/
+.index-lianxi{
+	width: 100%;
+	height: 232px;
+	margin-top: 130px;
+	display: flex;
+	margin-bottom: 110px;
+}
+.index-lianxi1{
+	width: 33.333%;
+	height: 232px;
+	text-align: center;
+}
+.index-lianxi1 img{
+	margin-bottom: 80px;
+}
+.index-lianxi1 p{
+	font-size: 14px;
+	line-height: 30px;
+}
+.index-lianxi1-ac{
+	color: #496ee8;
+}
+/*联系我们结束*/
+/*联系我们开始引用index结束*/
+
+/*底部开始*/
+.index-footer{
+	width: 100%;
+	height: 312px;
+	background-color: #212121;
+}
+.index-footer-nr{
+	width: 900px;
+	height: 220px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.index-footer-erweima{
+	width: 220px;
+	height: 220px;
+	text-align: center;
+}
+.index-footer-erweima img{
+	width: 180px;
+	height: 180px;
+	margin-top: 12px;
+}
+.index-footer-erweima p{
+	font-size: 14px;
+	line-height: 40px;
+	color: white;
+}
+.index-beihao{
+	width: 100%;
+	height: 90px;
+	text-align: center;
+}
+.index-beihao p{
+	font-size: 12px;
+	line-height: 40px;
+	color: #a9a9a9;
+}
+/*底部结束*/
