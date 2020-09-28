@@ -1,3 +1,3 @@
-let a=20
+let a=40
 let b=30
 
